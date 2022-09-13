@@ -1,11 +1,8 @@
 package com.moxy.moshi
 
 import android.os.Bundle
-import android.util.Log
 import com.arellomobile.mvp.MvpActivity
-import com.moxy.R
 import com.moxy.databinding.ActivityMoshiBinding
-import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
