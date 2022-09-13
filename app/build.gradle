@@ -48,7 +48,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'com.arello-mobile:moxy:1.5.5'
+    annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.5'
+    implementation 'com.arello-mobile:moxy-app-compat:1.5.5'
     implementation 'com.arello-mobile:moxy-android:1.5.5'
     kapt 'com.arello-mobile:moxy-compiler:1.5.5'
+
     implementation 'com.arello-mobile:moxy-app-compat:1.5.5'
+
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    implementation "com.squareup.moshi:moshi-kotlin:1.9.3"
 }

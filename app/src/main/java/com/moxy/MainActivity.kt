@@ -1,5 +1,6 @@
 package com.moxy
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
 import android.util.Log
@@ -7,6 +8,7 @@ import com.arellomobile.mvp.MvpActivity
 import com.arellomobile.mvp.MvpDelegate
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.moxy.databinding.ActivityMainBinding
+import com.moxy.moshi.MoshiActivity
 
 class MainActivity : MvpActivity(), MainView {
 
@@ -26,6 +28,10 @@ class MainActivity : MvpActivity(), MainView {
     override fun loadMessage(message: String) {
         with(binding) {
             helloWorldTextView.text = message
+
+            clickMoshi.setOnClickListener {
+                startActivity(Intent(this@MainActivity, MoshiActivity::class.java))
+            }
         }
     }
 
